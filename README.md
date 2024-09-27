@@ -4,16 +4,32 @@
 - **Programming Language**: [Go(golang)](https://go.dev)
 - **Framework**: [Gin](https://github.com/gin-gonic/gin)
 - **Library**: [Air](https://github.com/air-verse/air?tab=readme-ov-file)
-- **Repository**: [Docker Hub](https://hub.docker.com/repository/docker/bosshie96/golang-air/general)
-- **Source Code**: [Github](https://github.com/Bosshie96)
+- **Repository**: [Docker Hub](https://hub.docker.com/repository/docker/bosshie96/golang-air)
+- **Source Code**: [Github](https://github.com/Bosshie96/go-air)
 
-We are use this image when start new go project in **Dev/Tutorial/Learn environments**.
+We are use this image when start new go project in **Dev/Demo/Tutorial/Learn environments**.
+
+# Requirement:
+
+[Git Bash](https://git-scm.com/downloads)
+[Docker Developer tools](https://docs.docker.com/manuals/)
+
+# How to build this Docker Image?
+
+- ## Fastest:
+
+  (Only 1 Command if you want to `build bosshie96/go-air:latest` in parent folder **Bash**)
+
+  ```yaml
+  git clone https://github.com/Bosshie96/go-air
+  cd go-air
+
+  docker build -f ./Dockerfile -t bosshie96/go-air:latest ./
+  ```
+
+  You can edit name tag "bosshie96/go-air:latest"
 
 # How to use this Docker Image?
-
-- ## Requirement:
-
-  `Git Bash`
 
 - ## Fastest:
 
