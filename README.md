@@ -108,3 +108,7 @@ We are use this image when start new go project in **Dev/Demo/Tutorial/Learn env
 
 - ## DONE
   After build success, you can run `curl localhost:8080/profile` and edit `main.go` to dev.
+
+## Stars History
+
+![GitHub Repo stars](https://img.shields.io/github/stars/bosshie96/go-air?style=social)
