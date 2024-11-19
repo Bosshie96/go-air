@@ -42,12 +42,13 @@ We are use this image when start new go project in **Dev/Demo/Tutorial/Learn env
 
   cat <<EOF > ./docker-compose.yaml
   services:
-  go-app:
-  	image: bosshie96/go-air:latest
-  	volumes:
-  	- .:/app
-  	ports:
-  	- "8080:8080"
+    go-app:
+      image: bosshie96/go-air:latest
+      volumes:
+      - .:/app
+      ports:
+      - "8080:8080"
+      command: sh -c "go mod tidy && air -c ../air/.air.toml"
   EOF
 
   cat <<EOF > ./main.go
@@ -92,12 +93,13 @@ We are use this image when start new go project in **Dev/Demo/Tutorial/Learn env
 
   cat <<EOF > ./docker-compose.yaml
   services:
-  go-app:
-  	image: bosshie96/go-air:latest
-  	volumes:
-  	- .:/app
-  	ports:
-  	- "8080:8080"
+    go-app:
+      image: bosshie96/go-air:latest
+      volumes:
+      - .:/app
+      ports:
+      - "8080:8080"
+      command: sh -c "go mod tidy && air -c ../air/.air.toml"
   EOF
 
   docker-compose up
@@ -112,3 +114,5 @@ We are use this image when start new go project in **Dev/Demo/Tutorial/Learn env
 ## Stars History
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/bosshie96/go-air?style=social)
+
+https://starchart.cc/bosshie96/go-air
